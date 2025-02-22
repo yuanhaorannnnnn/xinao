@@ -1,0 +1,13 @@
+{
+    "name": "digital-twin-frontend",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "live-server --port=5500 --host=localhost",
+        "build": "webpack --mode production"
+    },
+    "devDependencies": {
+        "live-server": "^1.2.0",
+        "webpack": "^5.76.0",
+        "webpack-cli": "^5.0.1"
+    }
+}
