@@ -55,7 +55,7 @@ const ValueFormatter = {
 // ========================
 export class AnalyticsPanel {
   constructor() {
-    // 表格配置（增强格式化）
+    // 更新后的表格配置
     this.statsTable = new Tabulator('#stats-table', {
       layout: 'fitColumns',
       columns: [
@@ -63,12 +63,13 @@ export class AnalyticsPanel {
           title: "指标", 
           field: "name",
           width: 120,
+          headerHozAlign: "left",  // 替代align
           formatter: cell => `<strong>${cell.getValue()}</strong>`
         },
         { 
           title: "数值", 
           field: "value",
-          align: "right",
+          headerHozAlign: "right",  // 替代align
           formatter: cell => {
             const value = cell.getValue();
             return ValueFormatter.format(value);

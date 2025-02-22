@@ -1,0 +1,64 @@
+./
+├── .gitignore
+├── config.json
+├── README.md
+├── repo_structure.txt
+├── backend/
+│   ├── requirements.txt
+│   ├── server.py
+│   ├── api/
+│   │   ├── field_api.py
+│   │   ├── mesh_api.py
+│   │   └── __init__.py
+│   ├── preprocessing/
+│   │   ├── preprocess.py
+│   │   ├── utils.py
+│   │   ├── config/
+│   │   │   ├── field_config.py
+│   │   │   └── mesh_config.py
+├── data/
+│   ├── processed/
+│   │   ├── displace_vector_x/
+│   │   │   ├── displace_vector_x_c0_0000.bin
+│   │   │   └── metadata.json
+│   │   ├── displace_vector_y/
+│   │   │   ├── displace_vector_y_c0_0000.bin
+│   │   │   └── metadata.json
+│   │   ├── displace_vector_z/
+│   │   │   ├── displace_vector_z_c0_0000.bin
+│   │   │   └── metadata.json
+│   │   ├── mesh/
+│   │   │   ├── coords_0000.bin
+│   │   │   └── metadata.json
+│   │   ├── temperature/
+│   │   │   ├── metadata.json
+│   │   │   └── temperature_c0_0000.bin
+│   │   ├── vonmises_stress/
+│   │   │   ├── metadata.json
+│   │   │   └── vonmises_stress_c0_0000.bin
+│   ├── raw/
+│   │   ├── mesh.npz
+│   │   └── temperature_250.0_result.npz
+├── frontend/
+│   ├── index.html
+│   ├── package.json
+│   ├── src/
+│   │   ├── assets/
+│   │   │   ├── shaders/
+│   │   │   ├── textures/
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   ├── js/
+│   │   │   ├── analytics.js
+│   │   │   ├── colorMapper.js
+│   │   │   ├── controls.js
+│   │   │   ├── loader.js
+│   │   │   ├── main.js
+│   │   │   ├── renderer.js
+│   │   │   ├── workers/
+│   │   │   │   ├── color.worker.js
+│   │   │   │   ├── data.worker.js
+│   │   │   │   └── stats.worker.js
+├── scripts/
+│   ├── generate_test_data.py
+│   └── generate_tree.py
